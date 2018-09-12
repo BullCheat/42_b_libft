@@ -6,7 +6,7 @@
 /*   By: adrean <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/10 17:19:56 by adrean            #+#    #+#             */
-/*   Updated: 2018/09/11 14:54:29 by adrean           ###   ########.fr       */
+/*   Updated: 2018/09/11 21:24:34 by adrean           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		((char *) b)[i] = (unsigned char) c;
+		((char *)b)[i] = (unsigned char)c;
 		i++;
 	}
 	return (b);

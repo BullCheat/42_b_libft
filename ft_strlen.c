@@ -6,16 +6,16 @@
 /*   By: adrean <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/10 17:21:23 by adrean            #+#    #+#             */
-/*   Updated: 2018/09/10 17:23:21 by adrean           ###   ########.fr       */
+/*   Updated: 2018/09/11 21:25:27 by adrean           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(const char *str)
+int	ft_strlen(const char *str)
 {
 	int i;
-	
+
 	i = 0;
 	while (str[i])
 		i++;

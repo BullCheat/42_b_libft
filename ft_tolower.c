@@ -6,11 +6,12 @@
 /*   By: adrean <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 14:35:35 by adrean            #+#    #+#             */
-/*   Updated: 2018/09/11 14:37:00 by adrean           ###   ########.fr       */
+/*   Updated: 2018/09/11 21:28:24 by adrean           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c) {
+int	ft_tolower(int c)
+{
 	if ('A' <= c && c <= 'Z')
 		return (c + ('a' - 'A'));
 	return (c);
