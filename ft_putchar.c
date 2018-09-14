@@ -6,13 +6,22 @@
 /*   By: adrean <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/13 22:20:11 by adrean            #+#    #+#             */
-/*   Updated: 2018/09/13 22:21:09 by adrean           ###   ########.fr       */
+/*   Updated: 2018/09/14 16:58:25 by adrean           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putchar(char c)
+int	ft_putchar(int c)
 {
-	return (write(1, &c, 1));
+	unsigned char out[2];
+
+	if (c < 0x80)
+		return (write(1, &c, 1));
+	else
+	{
+		out[0] = 0xC0 | ((c >> 6) & 0xF);
+		out[1] = 0x80 | (c & 0x3F);
+		return (write(1, out, 2));
+	}
 }
